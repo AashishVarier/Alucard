@@ -1,0 +1,48 @@
+
+
+	DB connectivity - Create Read Update Delete
+	Rest API
+	Logging
+	TDD
+	auto docs in springboot java
+	
+	
+getter setter constructer
+new @RequestMapping
+no arg constructor
+serverlet
+singleton
+lamda expression
+ArrayList
+
+
+ mvn to springbootproject
+  1. add <parent> spring boot starter -- opiniated framework - this has basic recommended config with a specific version which work well together - bill of material ; maven project is basically has child parent dependencies 
+  2. mvn is dependency manager - add <dependencies> ; spring boot has meta depencies - ie dependency having multiple jar for dependecies of a type of project - version taken from <parent>
+  3. to import specific properties <properties>
+  
+ Spring boot can be stand alone application - show main method with annotation @SprinBootApplication - use static method SpringApplication.run(c lass , arg) to create and host app in  servelet container with default config.
+ 
+ application context :- spring acts as container for diff services (controller , services etc) 	
+
+Customize spring boot application using application.properties  
+ 
+@Controller 
+	- java class -  has info about
+		1. what URI acess triggers it
+		2. what HTTP method used (GET POST etc )
+		3. method to run based on 1 & 2	
+	
+		@RequestMapping maps only GET by default- others have to specified
+	
+	Spring MVC auto converts return values into JSON (if @RESTController used)
+	
+	@Autowired - used to declare member variables of a class which needs dependecies injection
+	
+@Service
+	- has bussiness logic as methods
+	singleton - when app starts up, spring keeps an instance of this in memory
+	
+	
+	
+ 
