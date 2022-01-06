@@ -14,6 +14,12 @@ serverlet
 singleton
 lamda expression
 ArrayList
+embedded DB
+@entity class
+interface vs class
+methods refence - part of lamda
+@Repository
+Lazy loading in JPA
 
 
  mvn to springbootproject
@@ -42,6 +48,28 @@ Customize spring boot application using application.properties
 @Service
 	- has bussiness logic as methods
 	singleton - when app starts up, spring keeps an instance of this in memory
+	
+JPA - java persistence API- specification that helps with ORM (obeject Relation mapping ) with DB
+
+	ORM - map entity classes into SQL tables when we connect to DB 
+
+@Entity
+		@Id :- primary key
+		other JPA entity relationships also available  like:- @ManyToOne		
+
+	Spring Data JPA has standardard methods in CrudRepository  which can be extended to your interface
+	
+		CrudRepository is genric type
+	
+		Can create custom methods in the interface - sometimes dont have to implement the method, declaring the method with Spring JPA format (eg: to find an id by a property: - findByProperty(var_type id)) and Spring JPA will implement it
+		
+
+Spring Boot Actuator - has prod ready feature to help monitor and manage application - new endpoint can be added for seeing health etc (has other features)
+	 
+
+
+
+
 	
 	
 	
