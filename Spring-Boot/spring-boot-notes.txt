@@ -1,27 +1,4 @@
 
-
-	DB connectivity - Create Read Update Delete
-	Rest API
-	Logging
-	TDD
-	auto docs in springboot java
-	
-	
-getter setter constructer
-new @RequestMapping
-no arg constructor
-serverlet
-singleton
-lamda expression
-ArrayList
-embedded DB
-@entity class
-interface vs class
-methods refence - part of lamda
-@Repository
-Lazy loading in JPA
-
-
  mvn to springbootproject
   1. add <parent> spring boot starter -- opiniated framework - this has basic recommended config with a specific version which work well together - bill of material ; maven project is basically has child parent dependencies 
   2. mvn is dependency manager - add <dependencies> ; spring boot has meta depencies - ie dependency having multiple jar for dependecies of a type of project - version taken from <parent>
@@ -45,6 +22,8 @@ Customize spring boot application using application.properties
 	
 	@Autowired - used to declare member variables of a class which needs dependecies injection
 	
+	@RequestBody tells spring MVC that request payload has json rep of whatever needs to be passed.
+	
 @Service
 	- has bussiness logic as methods
 	singleton - when app starts up, spring keeps an instance of this in memory
@@ -64,7 +43,7 @@ JPA - java persistence API- specification that helps with ORM (obeject Relation 
 		Can create custom methods in the interface - sometimes dont have to implement the method, declaring the method with Spring JPA format (eg: to find an id by a property: - findByProperty(var_type id)) and Spring JPA will implement it
 		
 
-Spring Boot Actuator - has prod ready feature to help monitor and manage application - new endpoint can be added for seeing health etc (has other features)
+Spring Boot Actuator - has prod ready feature to help monitor and manage application - new endpoint can be added for seeing health etc (has other features )
 	 
 
 
